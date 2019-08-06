@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "homes",
+  "info": {
+    "name": "home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "homepage": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "page": {
+      "collection": "pages",
+      "via": "home"
+    }
+  }
+}

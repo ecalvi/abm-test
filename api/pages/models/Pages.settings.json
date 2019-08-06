@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "pages",
+  "info": {
+    "name": "pages",
+    "description": "Pages List"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "pages": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "home": {
+      "collection": "home",
+      "via": "page",
+      "dominant": true
+    }
+  }
+}
